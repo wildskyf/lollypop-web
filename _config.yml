@@ -1,0 +1,7 @@
+baseurl: "/lollypop.github.io"
+version: 0.8.20
+
+exclude: [README.md]
+collections:
+  features:
+    output: true

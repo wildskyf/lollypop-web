@@ -1,0 +1,64 @@
+---
+title: homepage
+---
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lollypop</title>
+		<link rel="stylesheet" href="{{site.baseurl}}/style.css">
+	</head>
+	<body>
+		<header>
+			<a href="https://github.com/gnumdk/lollypop">
+				<!--img src="{{site.baseurl}}/images/github.svg" alt="github icon" /-->
+				View on GitHub
+			</a>
+			<h1>Lollypop</h1>
+			<p>
+				A GNOME music player.
+			</p>
+			<img class="screenshot" src="{{site.baseurl}}/images/screenshot.jpg" alt="screenshot" height="548" width="1000" />
+			<img class="candy" src="{{site.baseurl}}/images/icon.png" alt="icon" />
+		</header>
+		<main>
+			<div class="downloadBar">
+				<div class="box">
+					<a class="botton green" href="#">Download</a>
+					<a href="#">what's new in {{site.version}}</a>
+				</div>
+				<div class="box">
+					<a class="botton" href="#"> Source</a>
+					<a href="#">dependences</a>
+				</div>
+			</div>
+			{% if site.features != empty %}
+			<ul class="feature">
+				{% for feature in site.features %}
+					<li>
+						<a href="{{site.baseurl}}{{ feature.url }}">
+							<!--img class="icon" src="{{ feature.icon }}" alt="icon of {{ feature.title }}" /-->
+							<div class="title">
+								{{ feature.title }}
+							</div>
+							<div class="description">
+								{{ feature.content }}
+							</div>
+						</a>
+					</li>
+				{% endfor %}
+				<li><!-- Here is nothing, this make display better... --></li>
+			</ul>
+			{% endif %}
+		</main>
+		<footer>
+			<div class="maintainer">
+				Lollypop maintained by <a href="https://github.com/gnumdk">gnumdk</a>
+			</div>
+			<div class="publish">
+				Published by <a href="https://pages.github.com/">GitHub Pages</a>
+			</div>
+		</footer>
+	</body>
+</html>
