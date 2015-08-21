@@ -1,17 +1,23 @@
 ---
+# Don't remove the "---", this is for compiling.
 ---
-@import url(http://fonts.googleapis.com/css?family=Raleway:100);
+@import url(http://fonts.googleapis.com/css?family=Yantramanav:100);
+@import url(http://fonts.googleapis.com/css?family=Roboto:500);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
 @import "variable";
 
 html, body {
 	margin: 0;
 	padding: 0;
-	background-color: $main-color;
+	background-image: url('./images/mtp.png');
+	background-size: cover;
 	font-size: 14px;
 }
 
 header {
+	background: radial-gradient(rgba(255, 225, 232, .8), rgba(252,57,114, 1));
 	text-align: center;
+	padding: 1.5rem;
 
 	a {
 		position: absolute;
@@ -37,17 +43,18 @@ header {
 
 	h1 {
 		position: relative;
-		top: -1.5rem;
+		top: -2rem;
 		color: #fff;
 		font-weight: 100;
-		font-family: 'Raleway', sans-serif;
-		font-size: 4rem;
+		font-family: 'Yantramanav', sans-serif;
+		font-size: 4.5rem;
 		z-index: 1;
 	}
 	p {
 		position: relative;
-		top: -3rem;
+		top: -5rem;
 		color: #fff;
+		font-family: 'Roboto', sans-serif;
 		font-size: 2rem;
 		font-weight: bold;
 		z-index: 1;
@@ -58,7 +65,9 @@ header {
 		margin: 0 auto;
 
 		&.screenshot {
+			margin-top: -50px;
 			z-index: 1;
+			box-shadow: 0px 0px 20px #343434;
 		}
 		&.candy {
 			position: relative;
@@ -71,7 +80,7 @@ header {
 main {
 	position: relative;
 	top: -500px;
-	padding: 10rem 5% 4rem;
+	padding: 6rem 5% 4rem;
 	width: 90%;
 	background-color: #fff;
 	text-align: center;
@@ -149,10 +158,11 @@ main {
 				.title {
 					display: inline-block;
 					color: $footer-bgcolor;
-					font-weight: 600;
+					font-weight: 500;
+					font-family: 'Roboto', sans-serif;
 				}
 				.description {
-
+					font-family: 'Source Sans Pro', sans-serif;
 				}
 			}
 		}
