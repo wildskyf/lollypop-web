@@ -9,7 +9,7 @@
 html, body {
 	margin: 0;
 	padding: 0;
-	background-image: url('./images/mtp.png');
+	background: url('./images/mtp.png') fixed;
 	background-size: cover;
 	font-size: 14px;
 }
@@ -34,10 +34,22 @@ header {
 		transition-duration: .25s;
 		font-weight: bold;
 
+		svg {
+			display: inline-block;
+			margin-right: .5rem;
+			vertical-align: top;
+			fill: #FD3E75;
+			transition-duration: .25s;
+		}
+
 		&:hover {
-			background-color: $main-color;
+			background-color: rgba(0,0,0,0);
 			color: #fff;
 			border: 2px solid #fff;
+
+			svg {
+				fill: #fff;
+			}
 		}
 	}
 
@@ -153,11 +165,12 @@ main {
 				text-decoration: none;
 
 				.icon {
-
+					margin-right: .25rem;
 				}
 				.title {
 					display: inline-block;
 					color: $footer-bgcolor;
+					vertical-align: top;
 					font-weight: 500;
 					font-family: 'Roboto', sans-serif;
 				}
