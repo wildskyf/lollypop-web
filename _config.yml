@@ -1,4 +1,4 @@
-baseurl: "/lollypop"
+baseurl: "/lollypop-web"
 version: 0.9.42
 
 exclude: [README.md]
