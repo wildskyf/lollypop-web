@@ -27,25 +27,14 @@ title: homepage
 			<img class="candy" src="{{site.baseurl}}/images/icon.png" alt="icon" />
 		</header>
 		<main>
-			<div class="downloadBar">
-				<div class="box">
-					<a class="botton green" href="https://github.com/gnumdk/lollypop/releases">Download</a>
-				</div>
-				<div class="box">
-					<a class="botton" href="/lollypop/packages.html"> Packages</a>
-				</div>
-			</div>
-			{% if site.features != empty %}
-			<ul class="feature">
-				{% for feature in site.features %}
+			{% if site.packages != empty %}
+			<ul class="package">
+				{% for package in site.packages %}
 					<li>
-						<a href="#"><!--"{{site.baseurl}}{{ feature.url }}"-->
-							<img class="icon" src="{{ site.baseurl }}/{{ feature.icon }}" alt="icon of {{ feature.title }}" height="15" weight="15" />
+						<a href="{{ package.site }}">
+							<img class="icon" src="{{ site.baseurl }}/{{ package.icon }}" alt="icon of {{ package.title }}" height="15" weight="15" />
 							<div class="title">
-								{{ feature.title }}
-							</div>
-							<div class="description">
-								{{ feature.content }}
+								{{ package.title }}
 							</div>
 						</a>
 					</li>

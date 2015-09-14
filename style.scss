@@ -1,15 +1,12 @@
 ---
 # Don't remove the "---", this is for compiling.
 ---
-@import url(http://fonts.googleapis.com/css?family=Yantramanav:100);
-@import url(http://fonts.googleapis.com/css?family=Roboto:500);
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
 @import "variable";
 
 html, body {
 	margin: 0;
 	padding: 0;
-	background: url('./images/mtp.png') fixed;
+	background: url('./images/background.jpg') fixed;
 	background-size: cover;
 	font-size: 14px;
 	display: flex;
@@ -32,7 +29,7 @@ header {
 		color: $main-color;
 		text-decoration: none;
 		border: 2px solid #fff;
-		font-family: 'Roboto', sans-serif;
+		font-family: sans-serif;
 		border-radius: 20px;
 		z-index: 2;
 		transition-duration: .25s;
@@ -73,7 +70,7 @@ header {
 		position: relative;
 		top: -5rem;
 		color: #fff;
-		font-family: 'Roboto', sans-serif;
+		font-family: sans-serif;
 		font-size: 2rem;
 		font-weight: bold;
 		z-index: 1;
@@ -164,7 +161,7 @@ main {
 			margin: 0 2rem;
 			width: 20rem;
 			vertical-align: top;
-			font-family: 'Roboto', sans-serif;
+			font-family: sans-serif;
 
 			@media screen and (max-width: 752px) {
 				width: 90%;
@@ -276,10 +273,10 @@ main {
 					color: $footer-bgcolor;
 					vertical-align: top;
 					font-weight: 500;
-					font-family: 'Roboto', sans-serif;
+					font-family:  sans-serif;
 				}
 				.description {
-					font-family: 'Source Sans Pro', sans-serif;
+					font-family:  sans-serif;
 				}
 			}
 		}
@@ -292,7 +289,7 @@ footer {
 	height: 1.5rem;
 	background-color: $footer-bgcolor;
 	color: #fff;
-	font-family: 'Roboto', sans-serif;
+	font-family: sans-serif;
 
 	@media screen and (max-width: 1045px) {
 		margin-top: -350px;
