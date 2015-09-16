@@ -1,5 +1,6 @@
 ---
 title: homepage
+permalink: /tw/
 ---
 
 <!DOCTYPE html>
@@ -34,7 +35,7 @@ title: homepage
 			</a>
 			<h1>Lollypop</h1>
 			<p>
-				A GNOME music player.
+				GNOME 音樂播放器
 			</p>
 			<img class="screenshot" src="{{site.baseurl}}/images/screenshot.jpg" alt="screenshot" height="548" width="1000" />
 			<img class="candy" src="{{site.baseurl}}/images/icon.png" alt="icon" />
@@ -42,15 +43,15 @@ title: homepage
 		<main>
 			<div class="downloadBar">
 				<div class="box">
-					<a class="botton green" href="https://github.com/gnumdk/lollypop/releases">Download</a>
+					<a class="botton green" href="https://github.com/gnumdk/lollypop/releases">下載</a>
 				</div>
 				<div class="box">
-					<a class="botton" href="/lollypop-web/packages/">Packages</a>
+					<a class="botton" href="/lollypop-web/packages/"> 安裝包</a>
 				</div>
 			</div>
-			{% if site.features != empty %}
+			{% if site.features-tw != empty %}
 			<ul class="feature">
-				{% for feature in site.features %}
+				{% for feature in site.features-tw %}
 					<li>
 						<a href="#"><!--"{{site.baseurl}}{{ feature.url }}"-->
 							<img class="icon" src="{{ site.baseurl }}/{{ feature.icon }}" alt="icon of {{ feature.title }}" height="15" weight="15" />
@@ -70,10 +71,10 @@ title: homepage
 		</main>
 		<footer>
 			<div class="maintainer">
-				Lollypop maintained by <a href="mailto:cedric.bellegarde@adishatz.org">gnumdk</a>
+				Lollypop 由 <a href="mailto:cedric.bellegarde@adishatz.org">gnumdk</a> 維護
 			</div>
 			<div class="publish">
-				Published by <a href="https://pages.github.com/">GitHub Pages</a>
+				本頁面使用 <a href="https://pages.github.com/">GitHub Pages</a>
 			</div>
 		</footer>
 	</body>

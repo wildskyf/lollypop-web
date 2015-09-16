@@ -3,7 +3,9 @@ version: 0.9.42
 
 exclude: [README.md]
 collections:
- features:
-    output: true
- packages:
-    output: true
+    features:
+        output: false
+    features-tw:
+        output: false
+    packages:
+        output: true

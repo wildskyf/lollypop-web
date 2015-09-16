@@ -19,7 +19,95 @@ header {
 	text-align: center;
 	padding: 1.5rem;
 
-	a {
+	.choose-lan {
+		position: absolute;
+		top: 0px;
+		left: -20px;
+
+		&:hover {
+
+			label {
+				width: 10rem;
+				color: $main-color;
+				text-align: left;
+				cursor: pointer;
+				border-radius: 0 20px;
+
+				span {
+					left: 50px;
+				}
+			}
+
+			ul {
+				display: block;
+				position: absolute;
+				left: -1rem;
+				z-index: 2;
+
+				li:hover a {
+					background-color: $main-color;
+					color: #fff;
+				}
+			}
+		}
+
+		label {
+			position: absolute;
+			top: 10px;
+			left: 0px;
+			width: 1rem;
+			fill: $main-color;
+			padding: 1rem 2rem;
+			display: block;
+			background-color: #fff;
+			color: #fff;
+			text-decoration: none;
+			border: 2px solid #fff;
+			font-family: sans-serif;
+			border-radius: 20px;
+			font-weight: bold;
+			transition-duration: .4s;
+			transition-delay: .1s;
+
+			span {
+				position: absolute;
+				left: -100px;
+				transition-duration: .5s;
+			}
+		}
+
+		#multi-lan {
+			display: none;
+		}
+
+		ul {
+			position: absolute;
+			top: 37px;
+			left: -15rem;
+			padding: .5rem 2rem;
+			list-style-type: none;
+			transition-duration: .5s;
+
+			li {
+				display: block;
+				line-height: 2.5rem;
+
+				&:last-child a {
+					border-radius: 0 0 20px;
+				}
+
+				a {
+					display: block;
+					padding: .25rem 5.125rem .25rem 5rem;
+					background-color: #fff;
+					color: $main-color;
+				}
+			}
+		}
+
+	}
+
+	> a {
 		position: absolute;
 		top: 10px;
 		right: 20px;
@@ -55,6 +143,8 @@ header {
 	}
 	h1 {
 		position: relative;
+		width: 50%;
+    	margin: 4rem auto 4.5rem;
 		top: -2rem;
 		color: #fff;
 		font-weight: 100;
