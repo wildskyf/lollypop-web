@@ -11,6 +11,20 @@ permalink: /tw/
 		<title>Lollypop</title>
 		<link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/images/favicon.png" />
 		<link rel="stylesheet" href="{{site.baseurl}}/style.css">
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                package = document.getElementById("package");
+                package.className = "package-hidden";
+                document.getElementById("packages").addEventListener("click", function(event){
+                    event.preventDefault();
+                    if(package.className == "package-hidden") {
+                        package.className = "package-shown";
+                    } else {
+                        package.className = "package-hidden";
+                    }
+                });
+            });
+		</script>
 	</head>
 	<body>
 		<header>
@@ -19,7 +33,7 @@ permalink: /tw/
 					<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 8 8">
 				  		<path d="M0 0v1h8v-1h-8zm0 2.97v1h8v-1h-8zm0 3v1h8v-1h-8z" transform="translate(0,1)" />
 					</svg>
-					<span>Swich Language</span>
+					<span>Switch Language</span>
 				</label>
 				<input type="checkbox" id="multi-lan">
 				<ul>
@@ -46,9 +60,26 @@ permalink: /tw/
 					<a class="botton green" href="https://github.com/gnumdk/lollypop/releases">下載</a>
 				</div>
 				<div class="box">
-					<a class="botton" href="/lollypop-web/packages.html"> 安裝包</a>
+					<a class="botton" href="#" id="packages"> 安裝包</a>
 				</div>
 			</div>
+            
+            {% if site.packages != empty %}
+			<ul id="package">
+				{% for package in site.packages %}
+					<li style="background-color:#{{ package.background }};">
+						<a href="{{ package.site }}">
+							<div class="title">
+								{{ package.title }}
+							</div>
+						</a>
+					</li>
+				{% endfor %}
+                <li><!-- Here is nothing, this make display better... --></li>
+			</ul>
+			{% endif %}
+			
+            
 			{% if site.features-tw != empty %}
 			<ul class="feature">
 				{% for feature in site.features-tw %}
