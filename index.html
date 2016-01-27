@@ -62,22 +62,21 @@ title: homepage
 					<a class="botton" href="#" id="packages">Packages</a>
 				</div>
 			</div>
-			
+
 			{% if site.packages != empty %}
 			<ul id="package">
-				{% for package in site.packages %}
-					<li style="background-color:#{{ package.background }};">
-						<a href="{{ package.site }}">
+				{% for package in site.data.packages %}
+					<li style="background:{{ package.bg-color }};">
+						<a href="{{ package.url }}">
 							<div class="title">
-								{{ package.title }}
+								{{ package.name }}
 							</div>
 						</a>
 					</li>
 				{% endfor %}
-                <li><!-- Here is nothing, this make display better... --></li>
 			</ul>
 			{% endif %}
-			
+
 			{% if site.features != empty %}
 			<ul class="feature">
 				{% for feature in site.features %}
