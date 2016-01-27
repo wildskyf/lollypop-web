@@ -54,8 +54,8 @@ permalink: /tw/
 			{% if site.packages != empty %}
 			<ul id="package">
 				{% for package in site.data.packages %}
-					<li style="background:{{ package.bg-color }};">
-						<a href="{{ package.url }}">
+					<li>
+						<a href="{{ package.url }}" style="background:{{ package.bg-color }};">
 							<div class="title">
 								{{ package.name }}
 							</div>
