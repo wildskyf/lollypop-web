@@ -10,20 +10,6 @@ title: homepage
 		<title>Lollypop</title>
 		<link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/images/favicon.png" />
 		<link rel="stylesheet" href="{{site.baseurl}}/style.css">
-		<script>
-            document.addEventListener("DOMContentLoaded", function() {
-                package = document.getElementById("package");
-                package.className = "package-hidden";
-                document.getElementById("packages").addEventListener("click", function(event){
-                    event.preventDefault();
-                    if(package.className == "package-hidden") {
-                        package.className = "package-shown";
-                    } else {
-                        package.className = "package-hidden";
-                    }
-                });
-            });
-		</script>
 	</head>
 	<body>
 		<header>
@@ -59,10 +45,11 @@ title: homepage
 					<a class="botton green" href="https://github.com/gnumdk/lollypop/releases">Download</a>
 				</div>
 				<div class="box">
-					<a class="botton" href="#" id="packages">Packages</a>
+					<label for="toggle-package" class="botton">Packages</label>
 				</div>
 			</div>
 
+			<input type="checkbox" id="toggle-package" name="toggle-package">
 			{% if site.packages != empty %}
 			<ul id="package">
 				{% for package in site.data.packages %}

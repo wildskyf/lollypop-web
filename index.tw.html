@@ -11,20 +11,6 @@ permalink: /tw/
 		<title>Lollypop</title>
 		<link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/images/favicon.png" />
 		<link rel="stylesheet" href="{{site.baseurl}}/style.css">
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                package = document.getElementById("package");
-                package.className = "package-hidden";
-                document.getElementById("packages").addEventListener("click", function(event){
-                    event.preventDefault();
-                    if(package.className == "package-hidden") {
-                        package.className = "package-shown";
-                    } else {
-                        package.className = "package-hidden";
-                    }
-                });
-            });
-		</script>
 	</head>
 	<body>
 		<header>
@@ -60,26 +46,25 @@ permalink: /tw/
 					<a class="botton green" href="https://github.com/gnumdk/lollypop/releases">下載</a>
 				</div>
 				<div class="box">
-					<a class="botton" href="#" id="packages"> 安裝包</a>
+					<label for="toggle-package" class="botton">軟體包</label>
 				</div>
 			</div>
-            
-            {% if site.packages != empty %}
+
+			<input type="checkbox" id="toggle-package" name="toggle-package">
+			{% if site.packages != empty %}
 			<ul id="package">
-				{% for package in site.packages %}
-					<li style="background-color:#{{ package.background }};">
-						<a href="{{ package.site }}">
+				{% for package in site.data.packages %}
+					<li style="background:{{ package.bg-color }};">
+						<a href="{{ package.url }}">
 							<div class="title">
-								{{ package.title }}
+								{{ package.name }}
 							</div>
 						</a>
 					</li>
 				{% endfor %}
-                <li><!-- Here is nothing, this make display better... --></li>
 			</ul>
 			{% endif %}
-			
-            
+
 			{% if site.features-tw != empty %}
 			<ul class="feature">
 				{% for feature in site.features-tw %}
