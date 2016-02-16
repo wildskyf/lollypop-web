@@ -5,7 +5,7 @@
 		"bg-color": "#1793d1"
 	},
 	{
-		"name": "Debian Jessie/ElementaryOS",
+		"name": "Debian/ElementaryOS",
 		"url": "https://github.com/gnumdk/lollypop/releases/tag/0.9.85",
 		"bg-color": "#c06"
 	},
