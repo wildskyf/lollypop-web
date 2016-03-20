@@ -5,11 +5,6 @@
 		"bg-color": "#1793d1"
 	},
 	{
-		"name": "Debian/ElementaryOS",
-		"url": "https://github.com/gnumdk/lollypop/releases/tag/0.9.85",
-		"bg-color": "#c06"
-	},
-	{
 		"name": "Fedora",
 		"url": "https://copr.fedoraproject.org/coprs/gnumdk/lollypop/",
 		"bg-color": "#4870BC"
