@@ -13,26 +13,13 @@ permalink: /tw/
 		<link rel="stylesheet" href="{{site.baseurl}}/style.css">
 	</head>
 	<body>
+
+		{% include language.html %}
+
+		<div class="site-wrap">
 		<header>
-			<div class="choose-lan">
-				<label for="multi-lan">
-					<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 8 8">
-				  		<path d="M0 0v1h8v-1h-8zm0 2.97v1h8v-1h-8zm0 3v1h8v-1h-8z" transform="translate(0,1)" />
-					</svg>
-					<span>Swich Language</span>
-				</label>
-				<input type="checkbox" id="multi-lan">
-				<ul>
-					<li><a href="{{site.baseurl}}/">English</a></li>
-					<li><a href="{{site.baseurl}}/tw/">Taiwan</a></li>
-				</ul>
-			</div>
-			<a href="https://github.com/gnumdk/lollypop">
-				<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 8 8">
-				  <path d="M2 0c-.55 0-1.04.23-1.41.59-.36.36-.59.85-.59 1.41 0 .55.23 1.04.59 1.41l3.41 3.41 3.41-3.41c.36-.36.59-.85.59-1.41 0-.55-.23-1.04-.59-1.41-.36-.36-.85-.59-1.41-.59-.55 0-1.04.23-1.41.59-.36.36-.59.85-.59 1.41 0-.55-.23-1.04-.59-1.41-.36-.36-.85-.59-1.41-.59z"
-				  transform="translate(0 1)"/>
-				</svg>View on GitHub
-			</a>
+			<a href="https://github.com/gnumdk/lollypop"> {% include love.svg %} View on GitHub </a>
+
 			<h1>Lollypop</h1>
 			<p>
 				GNOME 音樂播放器
@@ -46,9 +33,25 @@ permalink: /tw/
 					<a class="botton green" href="https://github.com/gnumdk/lollypop/releases">下載</a>
 				</div>
 				<div class="box">
-					<a class="botton" href="/lollypop-web/packages.html"> 安裝包</a>
+					<label for="toggle-package" class="botton">軟體包</label>
 				</div>
 			</div>
+
+			<input type="checkbox" id="toggle-package" name="toggle-package">
+			{% if site.packages != empty %}
+			<ul id="package">
+				{% for package in site.data.packages %}
+					<li>
+						<a href="{{ package.url }}" style="background:{{ package.bg-color }};">
+							<div class="title">
+								{{ package.name }}
+							</div>
+						</a>
+					</li>
+				{% endfor %}
+			</ul>
+			{% endif %}
+
 			{% if site.features-tw != empty %}
 			<ul class="feature">
 				{% for feature in site.features-tw %}
@@ -71,11 +74,14 @@ permalink: /tw/
 		</main>
 		<footer>
 			<div class="maintainer">
-				Lollypop 由 <a href="mailto:cedric.bellegarde@adishatz.org">gnumdk</a> 維護
+				Lollypop 由 <a href="mailto:cedric.bellegarde@adishatz.org">gnumdk</a> 維護。
+				捐款支持: <a href="https://www.paypal.me/lollypopgnome">Paypal</a> 或 <a href="https://flattr.com/profile/lollypop">Flattr</a>
+
 			</div>
 			<div class="publish">
 				本頁面使用 <a href="https://pages.github.com/">GitHub Pages</a>
 			</div>
 		</footer>
+		</div>
 	</body>
 </html>

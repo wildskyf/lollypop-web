@@ -1,0 +1,27 @@
+[
+	{
+		"name": "Arch Linux",
+		"url": "https://www.archlinux.org/packages/community/any/lollypop/",
+		"bg-color": "#1793d1"
+	},
+	{
+		"name": "Fedora",
+		"url": "https://copr.fedoraproject.org/coprs/gnumdk/lollypop/",
+		"bg-color": "#4870BC"
+	},
+	{
+		"name": "FreeBSD",
+		"url": "http://www.freshports.org/audio/lollypop/",
+		"bg-color": "#E8240C"
+	},
+	{
+		"name": "OpenSUSE",
+		"url": "https://build.opensuse.org/package/show?project=home%3Agnumdk31&package=lollypop",
+		"bg-color": "#73BA25"
+	},
+	{
+		"name": "Ubuntu/Debian Stretch",
+		"url": "https://launchpad.net/~gnumdk/+archive/ubuntu/lollypop",
+		"bg-color": "#DD4814"
+	}
+]
