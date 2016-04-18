@@ -16,7 +16,7 @@
 	},
 	{
 		"name": "OpenSUSE",
-		"url": "https://build.opensuse.org/package/show?project=home%3Agnumdk31&package=lollypop",
+		"url": "https://software.opensuse.org/package/lollypop",
 		"bg-color": "#73BA25"
 	},
 	{
