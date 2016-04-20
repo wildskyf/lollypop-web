@@ -2,4 +2,4 @@
 icon: "images/magnifying-glass.svg"
 title: Search
 ---
-Search in your collection by artist, album and title.
+Rechercher dans vos morceaux par artiste, album et titre.

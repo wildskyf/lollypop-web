@@ -1,9 +1,11 @@
 baseurl: "/lollypop-web"
-version: 0.9.42
+version: 0.9.98
 
 exclude: [README.md]
 collections:
     features:
+        output: false
+    features-fr:
         output: false
     features-tw:
         output: false
