@@ -31,10 +31,10 @@ permalink: /fr/
 		<main>
 			<div class="downloadBar">
 				<div class="box">
-					<a class="botton green" href="https://github.com/gnumdk/lollypop/releases">Download</a>
+					<a class="botton green" href="https://github.com/gnumdk/lollypop/releases">Code source</a>
 				</div>
 				<div class="box">
-					<label for="toggle-package" class="botton">Packages</label>
+					<label for="toggle-package" class="botton">Télécharger</label>
 				</div>
 			</div>
 
@@ -55,7 +55,7 @@ permalink: /fr/
 
 			{% if site.features-fr != empty %}
 			<ul class="feature">
-				{% for feature in site.features %}
+				{% for feature in site.features-fr %}
 					<li>
 						<a href="#"><!--"{{site.baseurl}}{{ feature.url }}"-->
 							<img class="icon" src="{{ site.baseurl }}/{{ feature.icon }}" alt="icon of {{ feature.title }}" height="15" weight="15" />
