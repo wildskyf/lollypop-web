@@ -1,0 +1,86 @@
+---
+title: startpagina
+permalink: /nl/
+---
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<title>Lollypop</title>
+		<link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/images/favicon.png" />
+		<link rel="stylesheet" href="{{site.baseurl}}/style.css">
+	</head>
+	<body>
+
+		{% include language.html %}
+
+
+		<div class="site-wrap">
+		<header>
+			<a href="https://github.com/gnumdk/lollypop"> {% include love.svg %} Bekijken op GitHub </a>
+
+			<h1>Lollypop</h1>
+			<p>
+				Moderne muziekspeler
+			</p>
+			<img class="screenshot" src="{{site.baseurl}}/images/screenshot.jpg" alt="screenshot" height="548" width="1000" />
+			<img class="candy" src="{{site.baseurl}}/images/icon.png" alt="icon" />
+		</header>
+		<main>
+			<div class="downloadBar">
+				<div class="box">
+					<a class="botton green" href="https://github.com/gnumdk/lollypop/releases">Broncode</a>
+				</div>
+				<div class="box">
+					<label for="toggle-package" class="botton">Downloaden</label>
+				</div>
+			</div>
+
+			<input type="checkbox" id="toggle-package" name="toggle-package">
+			{% if site.packages != empty %}
+			<ul id="package">
+				{% for package in site.data.packages %}
+					<li>
+						<a href="{{ package.url }}" style="background:{{ package.bg-color }};">
+							<div class="title">
+								{{ package.name }}
+							</div>
+						</a>
+					</li>
+				{% endfor %}
+			</ul>
+			{% endif %}
+
+			{% if site.features-nl != empty %}
+			<ul class="feature">
+				{% for feature in site.features-nl %}
+					<li>
+						<a href="#"><!--"{{site.baseurl}}{{ feature.url }}"-->
+							<img class="icon" src="{{ site.baseurl }}/{{ feature.icon }}" alt="icon of {{ feature.title }}" height="15" weight="15" />
+							<div class="title">
+								{{ feature.title }}
+							</div>
+							<div class="description">
+								{{ feature.content }}
+							</div>
+						</a>
+					</li>
+				{% endfor %}
+				<li><!-- Here is nothing, this make display better... --></li>
+				<li><!-- Here is nothing, this make display better... --></li>
+			</ul>
+			{% endif %}
+		</main>
+		<footer>
+			<div class="maintainer">
+				Lollypop wordt onderhouden door <a href="mailto:cedric.bellegarde@adishatz.org">gnumdk</a>. Doneer om de ontwikkeling van Lollypop te ondersteunen: <a href="https://www.paypal.me/lollypopgnome">Paypal</a> of <a href="https://flattr.com/profile/lollypop">Flattr</a>
+</div>
+			<div class="publish">
+				Gepubliceerd door <a href="https://pages.github.com/">GitHub Pages</a>
+			</div>
+		</footer>
+		</div>
+	</body>
+</html>
