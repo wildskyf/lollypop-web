@@ -1,5 +1,5 @@
 ---
 icon: "images/graph.svg"
-title: Replay gain
+title: Gain de relecture
 ---
 Support natif du «Replay gain».

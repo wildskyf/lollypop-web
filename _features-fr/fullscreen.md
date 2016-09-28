@@ -1,5 +1,5 @@
 ---
 icon: "images/fullscreen.png"
-title: Fullscreen view
+title: Plein écran	
 ---
 Une vue plein écran pour une meilleure lisibilité depuis votre canapé
