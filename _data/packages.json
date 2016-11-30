@@ -1,5 +1,10 @@
 [
 	{
+                "name": "Linux Flatpak",
+                "url": "https://github.com/gnumdk/lollypop-data/raw/master/org.gnome.Lollypop.flatpak",
+                "bg-color": "#fd7fa3"
+        },
+	{
 		"name": "Arch Linux",
 		"url": "https://www.archlinux.org/packages/community/any/lollypop/",
 		"bg-color": "#1793d1"
