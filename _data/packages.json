@@ -25,7 +25,7 @@
 		"bg-color": "#73BA25"
 	},
 	{
-		"name": "Ubuntu/Debian Stretch",
+		"name": "Ubuntu/Debian",
 		"url": "https://launchpad.net/~gnumdk/+archive/ubuntu/lollypop",
 		"bg-color": "#DD4814"
 	}
