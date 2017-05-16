@@ -1,7 +1,7 @@
 [
 	{
                 "name": "Flatpak",
-                "url": "https://github.com/gnumdk/lollypop-data/raw/master/org.gnome.Lollypop.flatpak",
+                "url": "https://raw.githubusercontent.com/gnumdk/lollypop-data/master/FLATPAK.txt",
                 "bg-color": "#fd7fa3"
         },
 	{
