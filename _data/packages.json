@@ -21,7 +21,7 @@
 	},
 	{
 		"name": "OpenSUSE",
-		"url": "https://software.opensuse.org/package/lollypop",
+		"url": "https://build.opensuse.org/package/show/multimedia:apps/lollypop",
 		"bg-color": "#73BA25"
 	},
 	{
