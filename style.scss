@@ -48,6 +48,7 @@ html, body {
 			font-weight: 600;
 			bottom-top: 1px solid #fff;
 			border-bottom: 1px solid #FD759D;
+			font-family: sans-serif;
 
 			&:hover {
 				background: #FD759D;
@@ -277,6 +278,7 @@ main {
 					display: inline-block;
 					width: 10rem;
 					padding-right: 4rem;
+					text-align: center;
 				}
 
 				@media screen and (max-width: 450px) {
@@ -284,6 +286,7 @@ main {
 					padding-right: 0;
 					margin: 0 auto 2rem;
 					display: block;
+					text-align: center;
 				}
 
 				&:hover {
